@@ -86,12 +86,20 @@ function createHTMLTemplate(data){
     return HTMLTemplate;
 }
 
+var comment_list=[];
+app.get('/comments',function(req,res){
+    var comment=req.query.comment;
+    comment_list.push(comment);
+    res.send(JSON.stringify(comment_list));
+});
+
 var names=[];
 app.get('/submit-names',function(req,res){
    var name=req.query.name;
    names.push(name);
    res.send(JSON.stringify(names));
 });
+
 
 var counter=0;
 app.get('/counter',function(req,res){

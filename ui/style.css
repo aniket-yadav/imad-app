@@ -33,4 +33,17 @@ body {
 a{
 	text-decoration: none;
 }
+#comment{
+  width: 100%;
+  height: 100px;
+  font-size: 120%;
+  margin-top: 10px;
+}
+#submit-cmt,#submit_btn,#counter{
+  font-size: 120%;
+}
+#submit-cmt{
+  margin-bottom: 20px;
+  float: right;
+}
 

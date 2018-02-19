@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale='1'>
         <title>Aniket's webapp</title>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -18,14 +20,23 @@
         </div>
         <hr>
         <div class="footer">
-            This Button <button id="counter">click</button> has been clicked <span id="count">0</span> times
+            This Button <input type="Button" value="click" id="counter"> has been clicked <span id="count">0</span> times
 
             <hr>
-            <input  type="text" id="name" >
-            <input type="submit" id="submit_btn" value="submit">
+            <input  type="text" id="name"  >
+            <input type="submit" id="submit_btn" value="submit" >
             <ul id="namelist">
                 
             </ul>
+            <hr>
+            <label>Comments :</label>
+            <br>
+            <textarea id="comment" placeholder=" Add a comment " ></textarea>
+            <input type="submit" id="submit-cmt" value="submit">
+
+            <ol id="comment-list">
+                
+            </ol>
         </div>
 
         </div>
