@@ -16,7 +16,7 @@ request.onreadystatechange = function(){
    };
    //make a request
 
-   request.open('GET','http://anikety.imad.hasura-app.io/counter',true);
+   request.open('GET','http://127.0.0.1:8080/counter',true);
    request.send();
 };
 
@@ -53,7 +53,7 @@ submit.onclick=function(){
      
      var name=nameinput.value;
     if(name.length!=0){
-    request.open('GET','http://anikety.imad.hasura-app.io/submit-names?name='+name,true);
+    request.open('GET','http://127.0.0.1:8080/submit-names?name='+name,true);
     request.send();
   }
   
@@ -92,7 +92,7 @@ submit_comment.onclick=function(){
     var commentinput=document.getElementById('comment');
     var comment=commentinput.value;
     if(comment.length!==0){
-    request.open('GET','http://anikety.imad.hasura-app.io/comments?comment='+comment,true);
+    request.open('GET','http://127.0.0.1:8080/comments?comment='+comment,true);
     request.send();
   }
 };
