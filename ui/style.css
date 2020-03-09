@@ -2,13 +2,18 @@ body {
     font-family: sans-serif;
     background-color:#D7E3D7;
     margin-top: 75px;
+
 }
 
 .container{
   
-  max-width: 600px;
+  max-width: 700px;
   margin:0 auto;
   font-size: 120%;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px #999;
+  padding: 10px;
+  background: #fff;
 }
 .img{
 	text-align: center;
@@ -19,6 +24,15 @@ body {
 .img-medium {
     height: 200px;
     width:200px;
+      border-radius:10px;
+        box-shadow: 0 5px 10px #999;
+margin-bottom: 20px;
+
+}
+.body{
+      box-shadow: 0 5px 10px #999;
+      padding: 10px;
+      box-sizing:border-box;
 }
 
 .article{
@@ -38,12 +52,37 @@ a{
   height: 100px;
   font-size: 120%;
   margin-top: 10px;
+
 }
 #submit-cmt,#submit_btn,#counter{
   font-size: 120%;
 }
+
+#submit_btn{
+  border-radius: 10px;
+  background-color: dodgerblue;
+color: #fff;
+
+}
+#counter{
+  border-radius: 10px;
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+#name{
+  width: 80%;
+  padding: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+
 #submit-cmt{
   margin-bottom: 20px;
   float: right;
+  border-radius: 10px;
+   background-color: dodgerblue;
+  color: #fff;
 }
 
